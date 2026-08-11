@@ -145,6 +145,6 @@ Rozpisujemy te 6 składników na kartce przy pierwszej rozmowie i zaznaczamy, co
 
 Robimy wideopodcasty, krótkie formy pionowe i nagrania szkoleniowe. Nie robimy webinarów, transmisji live ani sesji zdjęciowych, więc jeśli to jest potrzebne, mówimy o tym od razu i nie udajemy, że damy radę.
 
-Prowadzimy własny podcast Growth, Scale & Automate. Koordynacja gości, opisy, wgrywanie na kanały i sprawdzanie wyników to robota, którą wykonujemy u siebie co tydzień, więc wiemy, ile realnie zajmuje i gdzie się sypie.
+Prowadzimy własny podcast Growth, Scale & Automate, więc każdy z tych składników wykonujemy u siebie co tydzień i wiemy, ile realnie zajmuje. U klientów bierzemy na siebie produkcję i to, co dzieje się z materiałem po nagraniu. Tematy, dobór gości i merytoryka zostają po Twojej stronie, bo to Twoja wiedza i Twoje kontakty.
 
 Zakres ustalamy przed pierwszym nagraniem, razem z liczbami: ile rolek z odcinka, ile rund poprawek, w jakim terminie oddajemy i kto publikuje. Wycenę omawiamy na rozmowie, kiedy te liczby są już ustalone.

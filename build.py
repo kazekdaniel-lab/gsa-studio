@@ -308,8 +308,8 @@ Dla firm, które chcą mieć kanał, a nie pojedyncze nagranie. Najczęściej pr
 
 Pięć etapów. Twój jest jeden.
 
-1. **Format i tematy.** Ustalamy, o czym jest kanał, do kogo mówi i jak wygląda pojedynczy odcinek.
-2. **Przygotowanie.** Konspekty, ustalenia z gościem, harmonogram zjazdu. Dostajesz wszystko na piśmie przed wejściem do studia.
+1. **Format i oprawa.** Ustalamy, jak wygląda pojedynczy odcinek: układ planu, aranżacja, długość i oprawa graficzna. O czym są odcinki, decydujesz Ty.
+2. **Przygotowanie planu.** Harmonogram zjazdu, ustawienie planu i sprzętu, techniczne ustalenia z gościem. Tematy i nazwiska podajesz Ty.
 3. **Dzień zdjęciowy.** Światło stoi, dźwięk zebrany, kamery ustawione. Nagrywamy blokowo.
 4. **Postprodukcja.** Cięcie, przełączanie kadrów, kolor, mastering dźwięku, napisy, formaty pionowe.
 5. **Publikacja.** Odcinek, opis, tagi, miniatura, transkrypcja. Konta zostają Twoje.
@@ -351,7 +351,7 @@ Jeden dzień zdjęciowy w miesiącu plus około godziny rozłożonej na akceptac
 
 Nie mamy jednego zestawu dla wszystkich. Są trzy poziomy zaangażowania: pojedyncze odcinki, serie i prowadzenie całego kanału. Różnią się tym, ile pracy zostaje po Twojej stronie. Opisaliśmy je na stronie [zakresu współpracy](/zakres-wspolpracy/).
 ''',
-   faq=[('Czy muszę mieć gotowy pomysł na format?','Nie. Ustalenie formatu jest pierwszym etapem pracy, a nie warunkiem wejścia. Częściej pomysłu nie ma niż jest, i to jest normalny punkt startu.'),
+   faq=[('Kto wymyśla tematy i dobiera gości?','Ty. Merytoryka, tematy i kontakty do gości zostają po Twojej stronie na każdym poziomie współpracy, bo to Twoja wiedza i Twoja sieć. My odpowiadamy za to, jak rozmowa wygląda i brzmi, i za wszystko, co dzieje się z materiałem po nagraniu.'),
         ('Ile odcinków można nagrać jednego dnia?','Zależy od formatu i od tego, ile osób jest na planie. Nagrywamy blokowo, bo każdy kolejny odcinek tego samego dnia idzie szybciej niż pierwszy. Liczbę ustalamy przy planowaniu zjazdu.'),
         ('Kto pisze opisy i publikuje odcinki?','Zależy od poziomu zakresu. Przy serii i przy prowadzeniu kanału opisy, tagi, miniatury i publikacja są po naszej stronie. Konta pozostają Twoje, my mamy dostęp roboczy.'),
         ('Do kogo należą materiały?','Do Ciebie. Wszystkie prawa do nagrania i materiałów końcowych przechodzą na Ciebie po rozliczeniu. Fragment w portfolio pokazujemy wyłącznie za Twoją zgodą.'),
@@ -437,14 +437,14 @@ Przy podcastach prompter rzadko się przydaje, bo rozmowa ma brzmieć jak rozmow
 
 Zależy od liczby modułów i od tego, czy scenariusz jest gotowy. Największym pożeraczem czasu nie jest nagrywanie, tylko brak przygotowanej treści. Opisaliśmy cały proces w tekście [jak nagrać profesjonalny kurs online](/blog/jak-nagrac-kurs-online/).
 ''',
-   faq=[('Czy pomagacie napisać scenariusz kursu?','Pomagamy ułożyć strukturę i podział na moduły. Merytoryka zostaje po Twojej stronie, bo to Twoja wiedza jest produktem.'),
+   faq=[('Czy pomagacie napisać scenariusz kursu?','Pomagamy ułożyć podział na moduły i długość pojedynczej lekcji, bo to wpływa na sposób nagrywania i późniejsze aktualizacje. Merytoryka zostaje po Twojej stronie, bo to Twoja wiedza jest produktem.'),
         ('Czy nagrywacie z prezentacją na ekranie?','Tak. Grafiki i slajdy wchodzą w montażu jako pełne przebitki albo jako element kadru.'),
         ('W jakich formatach dostaję pliki?','W formatach gotowych pod typowe platformy szkoleniowe, razem z napisami i transkrypcją każdego modułu.')]),
 
  dict(url='/zakres-wspolpracy/', tytul='Zakres współpracy - pojedyncze odcinki, serie, cały kanał',
    opis='Trzy poziomy współpracy ze studiem: pojedyncze odcinki, serie z ustalonym formatem i prowadzenie całego kanału. Zakres ustalamy na rozmowie.',
    h1='Jeden odcinek, seria<br>albo cały kanał', eyebrow='Zakres',
-   odp='Nie ma jednego zestawu dla wszystkich. Jest pytanie, jak daleko chcesz to zaprowadzić, i od tego zależy, ile pracy zostaje po Twojej stronie. Trzy poziomy różnią się nie liczbą godzin, tylko tym, kto odpowiada za format, tematy, publikację i to, co dzieje się po niej.',
+   odp='Nie ma jednego zestawu dla wszystkich. Jest pytanie, jak daleko chcesz to zaprowadzić, i od tego zależy, ile pracy zostaje po Twojej stronie. Trzy poziomy różnią się nie liczbą godzin, tylko tym, jak dużą część produkcji i publikacji bierzemy na siebie. Merytoryka, czyli tematy, goście i to, o czym mówisz, zostaje po Twojej stronie na każdym poziomie.',
    body='''
 ## Poziom I - pojedyncze odcinki
 
@@ -457,15 +457,15 @@ Jeden temat, jedno nagranie, komplet materiału. Wchodzisz z gotowym pomysłem a
 
 Cykl z zaplanowanym formatem i stałym terminem w kalendarzu. Nagrywamy blokowo, więc jeden dzień daje materiał na kilka tygodni publikacji. Tu zaczyna się praca nad tym, żeby odcinki wyglądały jak jedna całość, a nie jak zbiór nagrań.
 
-**Po Twojej stronie:** zjazd raz na ustalony okres, akceptacja.
-**Po naszej stronie:** format i oprawa serii, propozycje tematów, konspekty, produkcja, komplet krótkich form, opisy, harmonogram publikacji.
+**Po Twojej stronie:** tematy i goście, zjazd raz na ustalony okres, akceptacja.
+**Po naszej stronie:** spójna oprawa wizualna serii, harmonogram zjazdów, produkcja wszystkich odcinków, komplet krótkich form, transkrypcje i miniatury, pliki opisane i gotowe do wrzucenia.
 
 ## Poziom III - cały kanał
 
-Prowadzimy kanał jako całość. Ty jesteś przed kamerą, reszta jest naszą robotą, łącznie z tym, co dzieje się po publikacji.
+Prowadzimy produkcję kanału jako całość. Ty przynosisz tematy i gości, my odpowiadamy za wszystko, co dzieje się ze sprzętem, materiałem i plikami, łącznie z wrzuceniem odcinka na platformy.
 
-**Po Twojej stronie:** wejście do studia i decyzje kierunkowe.
-**Po naszej stronie:** strategia kanału, plan wydawniczy, tematy i konspekty, koordynacja gości, zjazdy, postprodukcja, krótkie formy i publikacja na wszystkich platformach, opisy, transkrypcje, miniatury, podsumowanie oglądalności i rekomendacje na kolejny kwartał.
+**Po Twojej stronie:** tematy, goście, merytoryka i decyzje kierunkowe.
+**Po naszej stronie:** regularne zjazdy w kalendarzu, produkcja wszystkich odcinków, krótkie formy pod każdą platformę, miniatury i transkrypcje, publikacja na platformach, archiwum materiałów, raport z tego, co i kiedy wyszło.
 
 ## Jak wybrać poziom
 
@@ -491,17 +491,17 @@ Trzy rzeczy: ile odcinków realnie chcesz wypuszczać, co już masz po swojej st
    h1='Pięć etapów,<br>z których trzy dzieją się bez Ciebie', eyebrow='Proces',
    odp='Produkcja dzieli się na 5 etapów. Twoja obecność jest wymagana w dwóch: przy ustaleniu formatu i w dniu zdjęciowym. Przygotowanie, postprodukcja i publikacja idą po naszej stronie, a Ty dostajesz je do akceptacji.',
    body='''
-## Etap 1 - format i tematy
+## Etap 1 - format i oprawa
 
-Ustalamy, o czym jest ten kanał, do kogo mówi i jak wygląda pojedynczy odcinek. To jedyny etap, w którym siedzimy nad tym razem od zera.
+Ustalamy, jak wygląda pojedynczy odcinek: układ planu, aranżacja, długość, oprawa graficzna i to, co ma wychodzić z jednego zjazdu.
 
-Wychodzisz z tego etapu z planem na pierwsze odcinki, a nie z pustą kartką. Jeśli nie masz pomysłu na format, to jest normalny punkt startu, nie problem.
+Merytoryka zostaje po Twojej stronie. Tematy, dobór gości i to, o czym mówisz, są Twoje, bo to Twoja wiedza i Twoje kontakty. My odpowiadamy za to, jak to wygląda i brzmi na ekranie.
 
-## Etap 2 - przygotowanie
+## Etap 2 - przygotowanie planu
 
-Konspekty, ustalenia z gościem, harmonogram zjazdu. Dostajesz wszystko na piśmie przed wejściem do studia, żeby wejść na plan przygotowany, a nie zaskoczony.
+Harmonogram zjazdu, ustawienie planu i sprzętu, techniczne ustalenia z gościem: o której ma być, ile potrwa, jak się ubrać. Tematy i nazwiska podajesz Ty.
 
-Co wysyłamy gościowi i kiedy, opisaliśmy w tekście [jak przygotować gościa do podcastu](/blog/jak-przygotowac-goscia-do-podcastu/).
+Co warto wysłać gościowi przed nagraniem, opisaliśmy w tekście [jak przygotować gościa do podcastu](/blog/jak-przygotowac-goscia-do-podcastu/).
 
 ## Etap 3 - dzień zdjęciowy
 
@@ -523,8 +523,8 @@ Odcinek, opis, tagi, miniatura, transkrypcja. Konta zostają Twoje, my mamy dost
 
 | Etap | Po Twojej stronie | Po naszej stronie |
 |---|---|---|
-| Format i tematy | decyzje kierunkowe | propozycje i struktura |
-| Przygotowanie | akceptacja konspektu | kalendarz, goście, konspekty |
+| Format i oprawa | tematy, goście, merytoryka | układ planu, aranżacja, oprawa |
+| Przygotowanie planu | podanie tematów i nazwisk | harmonogram, plan, sprzęt, logistyka |
 | Dzień zdjęciowy | obecność i rozmowa | plan, sprzęt, realizacja |
 | Postprodukcja | uwagi do podglądu | całość pracy |
 | Publikacja | nic | opisy, tagi, miniatury, wrzucenie |
@@ -911,7 +911,8 @@ Zakres usług: wideopodcasty, krótkie formy pionowe (rolki, shorty, talking hea
 Nie realizujemy: webinarów i transmisji na żywo, sesji zdjęciowych.
 
 Model pracy: jeden dzień zdjęciowy daje materiał na kilka tygodni publikacji. Nagrywanie blokowe, rejestracja ISO (osobna ścieżka na każdą kamerę i mikrofon).
-Poziomy współpracy: pojedyncze odcinki, serie, prowadzenie całego kanału. Zakres ustalany na rozmowie.
+Poziomy współpracy: pojedyncze odcinki, serie, prowadzenie produkcji całego kanału. Zakres ustalany na rozmowie.
+Podział odpowiedzialności: merytoryka, tematy i dobór gości zostają po stronie klienta na każdym poziomie. Studio odpowiada za plan, sprzęt, realizację, montaż, krótkie formy, miniatury, transkrypcje i publikację techniczną. Nie prowadzimy strategii treści ani nie piszemy konspektów merytorycznych.
 
 ## Podstrony
 - [Produkcja podcastów]({DOMENA}/produkcja-podcastow-warszawa/)

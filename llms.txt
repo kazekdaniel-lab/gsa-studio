@@ -6,7 +6,8 @@ Zakres usług: wideopodcasty, krótkie formy pionowe (rolki, shorty, talking hea
 Nie realizujemy: webinarów i transmisji na żywo, sesji zdjęciowych.
 
 Model pracy: jeden dzień zdjęciowy daje materiał na kilka tygodni publikacji. Nagrywanie blokowe, rejestracja ISO (osobna ścieżka na każdą kamerę i mikrofon).
-Poziomy współpracy: pojedyncze odcinki, serie, prowadzenie całego kanału. Zakres ustalany na rozmowie.
+Poziomy współpracy: pojedyncze odcinki, serie, prowadzenie produkcji całego kanału. Zakres ustalany na rozmowie.
+Podział odpowiedzialności: merytoryka, tematy i dobór gości zostają po stronie klienta na każdym poziomie. Studio odpowiada za plan, sprzęt, realizację, montaż, krótkie formy, miniatury, transkrypcje i publikację techniczną. Nie prowadzimy strategii treści ani nie piszemy konspektów merytorycznych.
 
 ## Podstrony
 - [Produkcja podcastów](https://kazekdaniel-lab.github.io/gsa-studio/produkcja-podcastow-warszawa/)
