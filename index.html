@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Studio wideopodcastowe Warszawa | Nagranie, montaż, publikacja</title>
+<meta name="description" content="Przychodzisz porozmawiać, wychodzisz z materiałem na miesiąc. Nagranie, montaż, rolki, opisy i publikacja w jednym miejscu. Studio wideopodcastowe w Warszawie.">
+<meta name="robots" content="noindex,nofollow">
+<link rel="stylesheet" href="assets/fonts.css">
+<style>
+/* ══════════ 1. TOKENY ══════════ */
+:root{
+  --canvas:#120A06; --surface-1:#1A0F0A; --surface-2:#211410; --surface-3:#2A1B15;
+  --hairline:rgba(245,233,213,.14); --hairline-hi:rgba(245,233,213,.28);
+  --ink:#F5E9D5; --ink-muted:#A89684; --ink-subtle:#6F5D4E;
+  --cream:#FAF7F2; --surface-cream:#F1EADF; --ink-dark:#1A1410;
+  --hairline-cream:rgba(26,20,16,.14);
+  --accent:#FF5900;
+  --ff:'Plus Jakarta Sans',-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;
+  --ff-mono:'JetBrains Mono',ui-monospace,'SF Mono',Menlo,Consolas,monospace;
+  --gut:28px; --edge:56px; --maxw:1680px;
+  --air:200px; --norm:128px; --tight:72px;
+  --ease:cubic-bezier(.2,.6,.2,1);
+}
+@media(max-width:1279px){:root{--gut:20px;--edge:40px;--air:150px;--norm:104px;--tight:64px}}
+@media(max-width:767px){:root{--gut:16px;--edge:20px;--air:112px;--norm:80px;--tight:48px}}
+@media(min-width:1921px){:root{--gut:40px}}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--surface-1);color:var(--ink);font-family:var(--ff);font-size:17px;line-height:1.55;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+::selection{background:var(--accent);color:#fff}
+
+/* ══════════ 2. SIATKA ══════════ */
+.grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:var(--gut);
+  max-width:var(--maxw);margin-inline:auto;padding-inline:var(--edge)}
+@media(max-width:1279px){.grid{grid-template-columns:repeat(6,minmax(0,1fr))}}
+@media(max-width:767px){.grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
+section{position:relative}
+.pad-air{padding-block:var(--air)}
+.pad-norm{padding-block:var(--norm)}
+.pad-tight{padding-block:var(--tight)}
+.dark{background:var(--surface-1);color:var(--ink)}
+.canvas{background:var(--canvas);color:var(--ink)}
+.light{background:var(--cream);color:var(--ink-dark)}
+
+/* kolumny startowe - regula wedrujacego startu */
+.c1-8{grid-column:1/9} .c1-6{grid-column:1/7} .c1-5{grid-column:1/6}
+.c2-7{grid-column:2/8} .c2-6{grid-column:2/7} .c3-10{grid-column:3/11} .c1-7{grid-column:1/8} .c8-9{grid-column:8/10}
+.c4-8{grid-column:4/9} .c9-12{grid-column:9/13} .c10-12{grid-column:10/13}
+.c1-12{grid-column:1/-1} .c7-8{grid-column:7/9}
+@media(max-width:1279px){
+  .c1-8,.c1-6,.c1-5,.c2-7,.c2-6,.c3-10,.c4-8,.c1-12,.c1-7{grid-column:1/-1}
+  .c9-12,.c10-12,.c7-8,.c8-9{grid-column:1/-1}
+}
+
+/* ══════════ 3. FAKTURA ══════════ */
+.dark::after,.canvas::after{content:'';position:absolute;inset:0;pointer-events:none;z-index:1;opacity:.05;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='128' height='128'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='128' height='128' filter='url(%23n)'/%3E%3C/svg%3E")}
+.glow-l::before{content:'';position:absolute;inset:0;pointer-events:none;z-index:0;
+  background:radial-gradient(ellipse 68% 52% at 10% 14%,rgba(255,89,0,.19),transparent 62%)}
+.glow-r::before{content:'';position:absolute;inset:0;pointer-events:none;z-index:0;
+  background:radial-gradient(ellipse 68% 55% at 90% 16%,rgba(255,89,0,.17),transparent 62%)}
+section > .grid,section > .bleed{position:relative;z-index:2}
+
+/* ══════════ 4. TYPOGRAFIA ══════════ */
+h1,h2,h3{font-weight:700;letter-spacing:-.035em;line-height:1}
+.h-hero{font-size:clamp(42px,6.1vw,104px);line-height:.96;letter-spacing:-.04em;font-weight:700}
+.h-sec{font-size:clamp(34px,4.8vw,76px);line-height:1;letter-spacing:-.035em;font-weight:700}
+.h-line{font-size:clamp(22px,1.9vw,28px);font-weight:600;line-height:1.16;letter-spacing:-.02em}
+.h-sub{font-size:clamp(19px,1.4vw,20px);font-weight:600;line-height:1.24;letter-spacing:-.01em}
+.lead{font-size:clamp(18px,1.35vw,22px);font-weight:400;line-height:1.5;letter-spacing:-.005em;max-width:62ch}
+.body{font-size:17px;line-height:1.55}
+.marg{font-size:14px;line-height:1.45;color:var(--ink-muted)}
+.light .marg{color:rgba(26,20,16,.6)}
+.num-xl{font-size:clamp(72px,12vw,180px);font-weight:700;line-height:.9;letter-spacing:-.04em;
+  font-variant-numeric:tabular-nums}
+.num-xl .suf{font-size:.4em;margin-left:.04em}
+.acc{color:var(--accent)}
+.light .lead{color:rgba(26,20,16,.66)}
+.dark .lead,.canvas .lead{color:var(--ink-muted)}
+
+/* linia mono z gwiazdka */
+.mono{font-family:var(--ff-mono);font-weight:500;font-size:12px;line-height:1.15;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--ink-muted);display:flex;flex-wrap:wrap;gap:0 .7em;align-items:center}
+.light .mono{color:rgba(26,20,16,.58)}
+.mono>span+span::before{content:'';display:inline-block;width:8px;height:8px;margin-right:.7em;
+  vertical-align:middle;background:var(--accent);
+  clip-path:polygon(50% 0,60% 40%,100% 50%,60% 60%,50% 100%,40% 60%,0 50%,40% 40%)}
+.star{display:inline-block;width:14px;height:14px;background:var(--accent);flex:none;
+  clip-path:polygon(50% 0,60% 40%,100% 50%,60% 60%,50% 100%,40% 60%,0 50%,40% 40%)}
+.slot{font-family:var(--ff-mono);font-weight:500;letter-spacing:.1em;color:var(--ink-muted);font-size:.92em}
+.light .slot{color:rgba(26,20,16,.5)}
+
+/* ══════════ 5. PASEK GORNY ══════════ */
+header{position:fixed;top:0;left:0;right:0;height:64px;z-index:60;background:var(--canvas);
+  border-bottom:1px solid var(--hairline)}
+header .grid{height:100%;align-items:center}
+.hd{grid-column:1/-1;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:19px;letter-spacing:-.02em}
+.hd-meta{margin-left:18px}
+nav.mono{gap:0 22px}
+nav.mono a{transition:color .16s var(--ease)}
+nav.mono a:hover{color:var(--accent)}
+.pill{display:inline-flex;align-items:center;gap:9px;border-radius:999px;padding:12px 22px;
+  font-family:var(--ff-mono);font-weight:500;font-size:12px;letter-spacing:.14em;text-transform:uppercase;
+  background:var(--ink);color:var(--canvas);transition:background .16s var(--ease),color .16s var(--ease)}
+.pill:hover{background:var(--accent);color:#fff}
+.pill:active{transform:scale(.97)}
+.pill--ghost{background:transparent;color:var(--ink);border:1px solid var(--hairline-hi)}
+.pill--ghost:hover{border-color:var(--accent);background:transparent;color:var(--accent)}
+#spis{display:none}
+
+/* szyna numeru */
+.rail{position:fixed;top:64px;bottom:0;width:1px;background:var(--hairline);z-index:5;pointer-events:none;
+  left:calc((100vw - min(100vw,var(--maxw)))/2 + var(--edge) - 22px)}
+.rail-num{position:fixed;left:calc((100vw - min(100vw,var(--maxw)))/2 + var(--edge) - 30px);top:50vh;
+  z-index:6;font-family:var(--ff-mono);font-weight:500;font-size:12px;letter-spacing:.16em;color:var(--accent);
+  pointer-events:none;transform:translateY(-50%)}
+@media(max-width:1279px){.rail,.rail-num{display:none}}
+
+/* ══════════ 6. KADRY (miejsce na material) ══════════ */
+.frame{position:relative;border-radius:14px;overflow:hidden;background:var(--surface-2);
+  border:1px solid var(--hairline);
+  background-image:repeating-linear-gradient(-45deg,rgba(245,233,213,.028) 0 1px,transparent 1px 9px)}
+.frame--acc{border:2px solid var(--accent)}
+.frame--pre{border:2px solid var(--ink)}
+.frame .tag{position:absolute;left:12px;bottom:12px;font-family:var(--ff-mono);font-size:11px;font-weight:500;
+  letter-spacing:.16em;text-transform:uppercase;color:var(--ink-muted);
+  background:rgba(0,0,0,.55);border-radius:999px;padding:6px 12px}
+.frame .badge{position:absolute;right:12px;top:12px;display:flex;align-items:center;gap:6px;
+  font-family:var(--ff-mono);font-size:11px;font-weight:500;letter-spacing:.1em;color:var(--ink);
+  background:rgba(0,0,0,.62);border-radius:999px;padding:6px 11px}
+.frame .badge-l{right:auto;left:12px;top:12px;color:var(--ink-muted)}
+.frame svg{width:13px;height:13px}
+.light .frame{background:var(--surface-cream);border-color:var(--hairline-cream);
+  background-image:repeating-linear-gradient(-45deg,rgba(26,20,16,.03) 0 1px,transparent 1px 9px)}
+.light .frame .tag{color:rgba(26,20,16,.55);background:rgba(255,255,255,.6)}
+
+/* ══════════ 7. SEKCJA 00 ══════════ */
+#s00{min-height:100vh;display:flex;align-items:center;padding-top:64px}
+#s00>.grid{width:100%;align-items:center;row-gap:48px}
+.hero-cta{display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin-top:40px}
+.hero-foot{grid-column:1/-1;display:flex;justify-content:space-between;align-items:flex-end;gap:20px;
+  border-top:1px solid var(--hairline);padding-top:20px;margin-top:24px}
+.link-arrow{font-family:var(--ff-mono);font-size:12px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--ink);border-bottom:1px solid var(--hairline-hi);padding-bottom:4px;transition:.16s var(--ease)}
+.link-arrow:hover{color:var(--accent);border-color:var(--accent)}
+.hero-frame{aspect-ratio:3/5}
+
+/* ══════════ 8. SEKCJA 01 - pas kadrow ══════════ */
+.strip{margin-top:64px;display:flex;gap:8px;overflow-x:auto;scroll-snap-type:x mandatory;
+  padding-bottom:20px;cursor:grab;scrollbar-width:none}
+.strip::before,.strip::after{content:'';flex:none;
+  width:calc((100vw - min(100vw,var(--maxw)))/2 + var(--edge))}
+.strip::-webkit-scrollbar{display:none}
+.strip.drag{cursor:grabbing}
+.strip>figure{scroll-snap-align:start;flex:none}
+.strip figcaption{margin-top:14px}
+.strip figcaption .mono{transition:color .16s var(--ease)}
+.strip>figure:hover .frame{border-color:var(--ink)}
+.strip>figure:hover figcaption .mono{color:var(--accent)}
+.w-169{width:min(46vw,620px);aspect-ratio:16/9}
+.w-239{width:min(52vw,720px);aspect-ratio:2.39/1}
+.w-45{width:min(26vw,340px);aspect-ratio:4/5}
+.w-11{width:min(30vw,420px);aspect-ratio:1/1}
+.progress{margin-top:8px;display:flex;align-items:center;gap:16px}
+.progress .track{flex:1;height:1px;background:var(--hairline);position:relative}
+.progress .track i{position:absolute;left:0;top:-1px;height:3px;background:var(--accent);width:18%}
+@media(max-width:767px){.w-169,.w-239,.w-45,.w-11{width:80vw}}
+
+/* ══════════ 9. SEKCJA 02 - os godzin ══════════ */
+.axis{grid-column:1/-1;margin-top:72px}
+.axis-row{display:grid;grid-template-columns:minmax(0,1fr);gap:10px;margin-bottom:34px}
+.axis-bar{height:22px;border-radius:4px;position:relative}
+.bar-ty{background:var(--ink-dark);width:12%}
+.bar-my{background:var(--ink-dark);border:1.5px solid var(--accent);width:100%;
+  background-image:repeating-linear-gradient(90deg,transparent 0 calc(8.33% - 1.5px),var(--accent) calc(8.33% - 1.5px) 8.33%)}
+.axis-scale{display:flex;justify-content:space-between;border-top:1px solid var(--hairline-cream);padding-top:8px}
+.big-two{display:flex;gap:64px;flex-wrap:wrap;align-items:flex-start}
+.brace{position:relative;padding-inline:32px}
+.brace::before,.brace::after{content:'';position:absolute;top:0;bottom:0;width:20px;
+  border:2px solid var(--accent);border-top:0;border-bottom:0}
+.brace::before{left:0;border-right:0;border-radius:20px 0 0 20px}
+.brace::after{right:0;border-left:0;border-radius:0 20px 20px 0}
+@media(max-width:767px){.brace{padding-inline:0 0;padding-left:16px}
+  .brace::after{display:none}.brace::before{width:0;border-left-width:1.5px;border-radius:0}}
+
+/* chipy odpowiedzialnosci */
+.chip{display:inline-flex;align-items:center;gap:8px;padding:7px 14px;border-radius:999px;
+  font-family:var(--ff-mono);font-weight:500;font-size:11.5px;line-height:1;letter-spacing:.14em;
+  text-transform:uppercase;border:1px solid var(--hairline);color:var(--ink-muted);background:transparent;white-space:nowrap}
+.light .chip{border-color:var(--hairline-cream);color:rgba(26,20,16,.6)}
+.chip--ty{border-color:currentColor;color:var(--ink)}
+.light .chip--ty{color:var(--ink-dark)}
+.chip--my{border-color:var(--accent);color:var(--ink)}
+.light .chip--my{color:var(--ink-dark)}
+.chip--my::before{content:'';width:6px;height:6px;border-radius:999px;background:var(--accent);flex:none}
+
+/* ══════════ 10. SEKCJA 03 - przebieg ══════════ */
+.etap{display:grid;grid-template-columns:64px minmax(0,1fr) auto;gap:24px;align-items:start;
+  padding:30px 0;border-top:1px solid var(--hairline)}
+.etap:last-child{border-bottom:1px solid var(--hairline)}
+.etap .n{font-family:var(--ff-mono);font-size:12px;font-weight:500;letter-spacing:.16em;color:var(--ink-subtle);padding-top:6px}
+.etap p{color:var(--ink-muted);margin-top:8px;max-width:52ch}
+.margs{border-left:1px solid var(--hairline);padding-left:20px;display:grid;gap:34px;align-content:start}
+@media(max-width:1279px){
+  .etap{grid-template-columns:44px minmax(0,1fr);gap:16px}
+  .etap .chip{grid-column:2;justify-self:start;margin-top:12px}
+  .margs{border-left:0;padding-left:0;border-top:1px solid var(--hairline);padding-top:28px;margin-top:40px;
+    grid-template-columns:repeat(3,1fr);gap:20px}
+}
+@media(max-width:767px){.margs{grid-template-columns:1fr}
+  .margs>div{border-left:1.5px solid var(--accent);padding-left:16px}}
+
+/* ══════════ 11. SEKCJA 04 - wykaz ══════════ */
+.wykaz{list-style:none;margin-top:56px}
+.wykaz li{display:flex;align-items:baseline;gap:12px;padding:18px 0;
+  border-bottom:1px solid var(--hairline-cream);transition:transform .16s var(--ease)}
+.wykaz li:hover{transform:translateX(8px)}
+.wykaz li:hover .spec{color:var(--accent)}
+.wykaz .nazwa{font-weight:600;font-size:20px;line-height:1.24;letter-spacing:-.01em;color:var(--ink-dark)}
+.wykaz .leader{flex:1;height:1em;background-image:radial-gradient(circle,rgba(26,20,16,.34) 1px,transparent 1px);
+  background-size:6px 6px;background-position:0 bottom;background-repeat:repeat-x}
+.wykaz .spec{font-family:var(--ff-mono);font-weight:500;font-size:12px;letter-spacing:.16em;text-transform:uppercase;
+  color:rgba(26,20,16,.62);white-space:nowrap;transition:color .16s var(--ease)}
+.wykaz li.total{border-left:1.5px solid var(--accent);padding-left:16px;border-bottom:0;margin-top:8px}
+@media(max-width:767px){.wykaz li{flex-wrap:wrap}.wykaz .leader{display:none}
+  .wykaz .spec{flex-basis:100%;margin-top:6px}}
+
+/* ══════════ 12. SEKCJA 05 - pasma zakresu ══════════ */
+.pasmo{position:relative;display:flex;align-items:center}
+.pasmo>.grid{width:100%}
+/* rosnaca wysokosc idzie z paddingu i z dlugosci tresci, nie z wymuszonego min-height */
+.pasmo-I{background:var(--canvas);padding-block:var(--norm)}
+.pasmo-II{background:var(--surface-2);padding-block:calc(var(--norm)*1.2)}
+.pasmo-III{background:var(--surface-3);padding-block:calc(var(--norm)*1.45)}
+.rzym{position:absolute;left:var(--edge);top:0;transform:translateY(-30%);
+  font-size:112px;font-weight:700;letter-spacing:.02em;color:var(--ink-subtle);z-index:1;line-height:1;
+  opacity:.8}
+.pasmo-body{grid-column:1/7}
+.pasmo-II .pasmo-body{grid-column:1/10}
+.pasmo-III .pasmo-body{grid-column:1/13}
+@media(max-width:1279px){.pasmo-body,.pasmo-II .pasmo-body,.pasmo-III .pasmo-body{grid-column:1/-1}
+  .rzym{left:var(--edge);font-size:64px}}
+.mikro{display:grid;grid-template-columns:38fr 62fr;gap:0;margin-top:36px}
+.mikro>div:first-child{padding-right:36px}
+.mikro>div:last-child{border-left:1px solid var(--hairline);padding-left:36px}
+.mikro ul{list-style:none;margin-top:16px;display:grid;gap:10px}
+.mikro li{display:grid;grid-template-columns:14px 1fr;gap:12px;align-items:start;color:var(--ink-muted);font-size:16px}
+.mikro li .star{width:11px;height:11px;margin-top:.42em}
+@media(max-width:767px){.mikro{grid-template-columns:1fr;gap:28px}
+  .mikro>div:first-child{padding-right:0}
+  .mikro>div:last-child{border-left:0;padding-left:0;border-top:1px solid var(--hairline);padding-top:28px}}
+
+/* ══════════ 13. SEKCJA 07 - studio ══════════ */
+.bleed{width:100vw;margin-left:calc(50% - 50vw)}
+.shot-main{aspect-ratio:21/9;position:relative;border-radius:0;border:0;border-top:1px solid var(--hairline);
+  border-bottom:1px solid var(--hairline)}
+.shot-main h2{position:absolute;left:var(--edge);bottom:40px;max-width:16ch}
+.aran{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--gut);margin-top:56px;align-items:start}
+.aran>*:nth-child(1){aspect-ratio:4/5}
+.aran>*:nth-child(2){aspect-ratio:1/1;margin-top:64px}
+.aran>*:nth-child(3){aspect-ratio:4/5}
+@media(max-width:767px){.aran{grid-template-columns:1fr}.aran>*:nth-child(2){margin-top:0}
+  .shot-main h2{left:20px;bottom:24px;font-size:30px}}
+.dane{display:grid;gap:0;align-content:start}
+.dane div{border-top:1px solid var(--hairline);padding:14px 0}
+
+/* ══════════ 14. SEKCJA 08 - pytania ══════════ */
+.qa{columns:2;column-gap:calc(var(--gut)*3)}
+.qa>div{break-inside:avoid;padding:26px 0;border-bottom:1px solid var(--hairline-cream);
+  transition:transform .16s var(--ease)}
+.qa>div:hover{transform:translateX(8px)}
+.qa>div:hover .qn{color:var(--accent)}
+.qn{font-family:var(--ff-mono);font-size:12px;font-weight:500;letter-spacing:.16em;color:rgba(26,20,16,.45);
+  margin-bottom:10px;transition:color .16s var(--ease)}
+.qa p{margin-top:10px;color:rgba(26,20,16,.7);font-size:16.5px}
+@media(max-width:1279px){.qa{columns:1}}
+
+/* ══════════ 15. SEKCJA 09 - zgloszenie ══════════ */
+.sheet{display:grid;gap:30px}
+.f-row{display:grid;grid-template-columns:1fr 1fr;gap:30px}
+.field label{display:block;font-family:var(--ff-mono);font-size:11.5px;font-weight:500;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--ink-muted);margin-bottom:10px}
+.field input,.field select,.field textarea{width:100%;background:transparent;border:0;
+  border-bottom:1px solid var(--hairline);color:var(--ink);font:inherit;font-size:17px;padding:8px 0;
+  transition:border-color .16s var(--ease)}
+.field textarea{min-height:76px;resize:vertical}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-bottom-color:var(--accent)}
+.field select{appearance:none;color:var(--ink)}
+.field select option{background:var(--canvas)}
+.kontakt-blok{display:grid;gap:14px}
+.kv{display:grid;grid-template-columns:auto 1fr;gap:10px 22px;align-items:center}
+.socials{display:flex;gap:10px;margin-top:26px}
+.socials a{width:38px;height:38px;border-radius:10px;background:var(--accent);color:#fff;
+  display:grid;place-items:center;transition:background .16s var(--ease)}
+.socials a:hover{background:#fff;color:var(--accent)}
+.socials svg{width:19px;height:19px}
+@media(max-width:767px){.f-row{grid-template-columns:1fr}}
+
+/* ══════════ 16. METRYCZKA ══════════ */
+footer{background:var(--canvas);border-top:1px solid var(--hairline)}
+.foot{display:grid;grid-template-columns:4fr 3fr 2fr 3fr;gap:var(--gut);grid-column:1/-1}
+.foot-bot{grid-column:1/-1;border-top:1px solid var(--hairline);margin-top:56px;padding-top:22px;
+  display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+@media(max-width:1279px){.foot{grid-template-columns:1fr 1fr;gap:36px}}
+@media(max-width:767px){.foot{grid-template-columns:1fr}}
+
+/* naglowek na wezszych ekranach */
+@media(max-width:1279px){.hd-meta{display:none}}
+@media(max-width:900px){nav.mono{display:none}}
+@media(max-width:767px){
+  .brand{font-size:17px}
+  .hero-frame{aspect-ratio:4/5;max-height:56vh}
+  #s00{min-height:auto;padding-top:104px;padding-bottom:72px}
+  .hero-foot{flex-direction:column;align-items:flex-start;gap:12px}
+  .h-sec br{display:none}
+  .rzym{font-size:72px}
+}
+
+/* ══════════ 17. RUCH ══════════ */
+.cut{opacity:0;transition:opacity .09s linear}
+.cut.in{opacity:1}
+.mask{display:block;overflow:hidden}
+.mask>span{display:block;clip-path:inset(100% 0 0 0);transition:clip-path .48s cubic-bezier(.16,1,.3,1)}
+.mask.in>span{clip-path:inset(0 0 0 0)}
+:focus-visible{outline:2px solid rgba(255,89,0,.5);outline-offset:3px}
+@media(prefers-reduced-motion:reduce){
+  .mask>span{clip-path:none!important}
+  .cut{transition:opacity .16s linear}
+  .wykaz li:hover,.qa>div:hover{transform:none}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="eye" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2"><path d="M1.6 12S5.5 4.8 12 4.8 22.4 12 22.4 12 18.5 19.2 12 19.2 1.6 12 1.6 12z"/><circle cx="12" cy="12" r="3.2"/></g></symbol>
+<symbol id="play" viewBox="0 0 24 24"><path fill="currentColor" d="M7 4.5l13 7.5-13 7.5z"/></symbol>
+<symbol id="yt" viewBox="0 0 24 24"><path fill="currentColor" d="M23 12s0-3.8-.5-5.6a2.9 2.9 0 00-2-2C18.7 4 12 4 12 4s-6.7 0-8.5.4a2.9 2.9 0 00-2 2C1 8.2 1 12 1 12s0 3.8.5 5.6c.3 1 1 1.7 2 2C5.3 20 12 20 12 20s6.7 0 8.5-.4a2.9 2.9 0 002-2C23 15.8 23 12 23 12zM9.8 15.4V8.6l5.7 3.4z"/></symbol>
+<symbol id="ig" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.6" cy="6.4" r="1.2" fill="currentColor" stroke="none"/></g></symbol>
+</svg>
+
+<div class="rail" aria-hidden="true"></div>
+<div class="rail-num" id="railNum" aria-hidden="true">00</div>
+
+<header>
+  <div class="grid"><div class="hd">
+    <div style="display:flex;align-items:center;min-width:0">
+      <a href="#s00" class="brand"><i class="star"></i>GSA STUDIO</a>
+      <span class="mono hd-meta" id="hdMeta"><span>Warszawa</span><span>Produkcja wideopodcastów end-to-end</span></span>
+    </div>
+    <nav class="mono" aria-label="Nawigacja">
+      <a href="produkcja-podcastow-warszawa/">Produkcja</a><a href="realizacje/">Realizacje</a><a href="zakres-wspolpracy/">Zakres</a><a href="studio/">Studio</a><a href="blog/">Blog</a><a href="kontakt/">Kontakt</a>
+    </nav>
+    <a href="kontakt/" class="pill">Umów wizytę</a>
+  </div></div>
+</header>
+
+<!-- ══ 00 OTWARCIE ══ -->
+<section id="s00" class="canvas glow-l" data-num="00">
+  <div class="grid">
+    <div class="c1-8">
+      <p class="mono cut"><span>00</span><span>Studio wideopodcastowe</span><span>Warszawa</span></p>
+      <h1 class="h-hero" style="margin-top:26px">
+        <span class="mask" style="display:block"><span>Przychodzisz porozmawiać.</span></span>
+        <span class="mask acc" style="display:block"><span>Wychodzisz z materiałem<br>na miesiąc.</span></span>
+      </h1>
+      <p class="lead cut" style="margin-top:32px;max-width:52ch">Nagranie, montaż, rolki, opisy i publikacja w jednym miejscu. Ty siadasz i mówisz, co masz do powiedzenia. Reszta dzieje się po naszej stronie.</p>
+      <div class="hero-cta cut">
+        <a href="#s09" class="pill">Umów wizytę</a>
+        <a href="#s01" class="link-arrow">Zobacz, co z tego wychodzi ↓</a>
+      </div>
+    </div>
+    <div class="c9-12 cut">
+      <div class="frame hero-frame"><span class="tag">Kadr z planu 3:5</span></div>
+    </div>
+    <div class="hero-foot cut">
+      <p class="mono"><span>Nagrywamy w Warszawie</span><span>Zjazdy blokowe</span><span>Materiał na miesiąc</span></p>
+      <p class="mono"><span>Przewiń</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- ══ 01 MATERIAŁ ══ -->
+<section id="s01" class="dark pad-norm" data-num="01">
+  <div class="grid">
+    <div class="c2-7">
+      <p class="mono cut"><span>01</span><span>Materiał</span><span>Odcinki z tego studia</span></p>
+      <h2 class="h-sec mask" style="margin-top:22px"><span>Najpierw kadry,<br>potem obietnice</span></h2>
+      <p class="lead cut" style="margin-top:26px">Każdy kadr pochodzi z odcinka, który wyszedł z tego studia. Przewiń w bok i obejrzyj całość bez wychodzenia ze strony.</p>
+    </div>
+  </div>
+  <div class="strip cut" id="strip">
+    <figure><div class="frame frame--acc w-169"><span class="badge"><svg><use href="#eye"/></svg>25,2 tys.</span></div>
+      <figcaption><p class="mono"><span>GSA</span><span>Odc. <i class="slot">[NR]</i></span><span>3 kamery</span><span><i class="slot">[X]</i> min</span></p></figcaption></figure>
+    <figure><div class="frame frame--acc w-239"><span class="badge"><svg><use href="#eye"/></svg>21,5 tys.</span></div>
+      <figcaption><p class="mono"><span>GSA</span><span>Odc. <i class="slot">[NR]</i></span><span>3 kamery</span><span><i class="slot">[X]</i> min</span></p></figcaption></figure>
+    <figure><div class="frame frame--acc w-45"><span class="badge"><svg><use href="#eye"/></svg>20,1 tys.</span></div>
+      <figcaption><p class="mono"><span>GSA</span><span>Rolka pionowa</span><span>1080×1920</span></p></figcaption></figure>
+    <figure><div class="frame frame--acc w-169"><span class="badge"><svg><use href="#eye"/></svg>15,2 tys.</span></div>
+      <figcaption><p class="mono"><span>GSA</span><span>Odc. <i class="slot">[NR]</i></span><span>4 kamery</span><span><i class="slot">[X]</i> min</span></p></figcaption></figure>
+    <figure><div class="frame frame--pre w-11"><span class="badge badge-l"><svg><use href="#play"/></svg>Odcinek przed emisją</span></div>
+      <figcaption><p class="mono"><span>GSA</span><span>Zapowiedź</span><span>Emisja wkrótce</span></p></figcaption></figure>
+  </div>
+  <div class="grid"><div class="c2-7 progress cut">
+    <span class="mono"><span>01 / 05</span></span>
+    <span class="track"><i></i></span>
+    <span class="mono"><span>Przeciągnij w bok</span></span>
+  </div></div>
+</section>
+
+<!-- ══ 02 TWÓJ CZAS ══ -->
+<section id="s02" class="light pad-air" data-num="02" style="padding-bottom:var(--norm)">
+  <div class="grid">
+    <div class="c1-6">
+      <p class="mono cut"><span>02</span><span>Rachunek godzin</span><span>Jeden miesiąc</span></p>
+      <h2 class="h-sec mask" style="margin-top:22px"><span>Ile z tego to realnie<br>Twoje godziny</span></h2>
+      <p class="lead cut" style="margin-top:26px">Najczęstsze pytanie nie brzmi „czy wyjdzie", tylko „ile mnie to zje". Rozpisujemy to, zanim zapytasz.</p>
+    </div>
+    <div class="axis cut">
+      <div class="axis-row">
+        <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap">
+          <span class="chip chip--ty">Po Twojej stronie</span>
+          <span class="mono"><span>Przyjazd</span><span>Rozmowa</span><span>Akceptacja</span></span>
+        </div>
+        <div class="axis-bar bar-ty"></div>
+      </div>
+      <div class="axis-row">
+        <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap">
+          <span class="chip chip--my">Po naszej stronie</span>
+          <span class="mono"><span>Zgranie</span><span>Selekcja</span><span>Montaż</span><span>Kolor</span><span>Dźwięk</span><span>Napisy</span><span>Pionowe</span><span>Miniatura</span><span>Opis</span><span>Publikacja</span></span>
+        </div>
+        <div class="axis-bar bar-my"></div>
+      </div>
+      <div class="axis-scale mono"><span>Początek miesiąca</span><span>Koniec miesiąca</span></div>
+      <p class="lead" style="margin-top:56px;max-width:46ch">Nie musisz niczego dosyłać ani domontowywać.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══ 03 PRZEBIEG ══ -->
+<section id="s03" class="dark pad-norm" data-num="03">
+  <div class="grid" style="row-gap:56px">
+    <div class="c1-8">
+      <p class="mono cut"><span>03</span><span>Przebieg</span><span>5 etapów</span></p>
+      <h2 class="h-sec mask" style="margin-top:22px"><span>Pięć etapów, z których<br>trzy dzieją się bez Ciebie</span></h2>
+      <p class="lead cut" style="margin-top:26px">Format i tematy ustalamy razem. Na planie jesteś jeden dzień. Postprodukcja, opisy i publikacja idą po naszej stronie - dostajesz je gotowe do akceptacji.</p>
+    </div>
+    <div class="c1-7 cut" style="grid-row:2">
+      <div class="etap"><span class="n">01</span>
+        <div><h3 class="h-line">Format i tematy</h3><p class="body">Ustalamy, o czym jest ten kanał, do kogo mówi i jak wygląda pojedynczy odcinek. To jedyny etap, w którym siedzimy nad tym razem od zera.</p></div>
+        <span class="chip chip--ty">Po Twojej stronie</span></div>
+      <div class="etap"><span class="n">02</span>
+        <div><h3 class="h-line">Przygotowanie</h3><p class="body">Konspekty, ustalenia z gościem, harmonogram zjazdu. Dostajesz wszystko na piśmie przed wejściem do studia.</p></div>
+        <span class="chip chip--my">Po naszej stronie</span></div>
+      <div class="etap"><span class="n">03</span>
+        <div><h3 class="h-line">Dzień zdjęciowy</h3><p class="body">Światło stoi, dźwięk zebrany, kamery ustawione. Nagrywamy blokowo, bo każdy kolejny odcinek tego samego dnia idzie szybciej niż pierwszy.</p></div>
+        <span class="chip chip--ty">Po Twojej stronie</span></div>
+      <div class="etap"><span class="n">04</span>
+        <div><h3 class="h-line">Postprodukcja</h3><p class="body">Cięcie, przełączanie kadrów, kolor, czyszczenie i mastering dźwięku, napisy, formaty pionowe.</p></div>
+        <span class="chip chip--my">Po naszej stronie</span></div>
+      <div class="etap"><span class="n">05</span>
+        <div><h3 class="h-line">Publikacja</h3><p class="body">Odcinek, opis, tagi, miniatura, transkrypcja. Konta zostają Twoje, my mamy dostęp roboczy.</p></div>
+        <span class="chip chip--my">Po naszej stronie</span></div>
+    </div>
+    <div class="c8-9 margs cut" style="grid-row:2">
+      <div><p class="marg">Nie musisz mieć gotowego pomysłu na format. Częściej go nie ma.</p></div>
+      <div><p class="marg">Jeden dzień zdjęciowy zamiast czterech wizyt w miesiącu.</p></div>
+      <div><p class="marg">Uwagi zbieramy na osi czasu materiału, nie mailem z opisem minut.</p></div>
+    </div>
+    <div class="c10-12 cut" style="grid-row:2;display:grid;gap:var(--gut);align-content:start">
+      <div class="frame" style="aspect-ratio:4/5"><span class="tag">Plan zdjęciowy</span></div>
+      <div class="frame" style="aspect-ratio:4/5"><span class="tag">Montaż</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ 04 WYKAZ ══ -->
+<section id="s04" class="light pad-tight" data-num="04" style="padding-bottom:var(--norm)">
+  <div class="grid">
+    <div class="c3-10">
+      <p class="mono cut"><span>04</span><span>Wykaz</span><span>Po jednym zjeździe</span></p>
+      <h2 class="h-sec mask" style="margin-top:22px"><span>Co zostaje po jednym<br>dniu zdjęciowym</span></h2>
+      <p class="lead cut" style="margin-top:26px">Jeden zjazd to nie jeden plik. To komplet materiału w formatach gotowych do wrzucenia, nie surówka do obróbki.</p>
+      <ul class="wykaz cut">
+        <li><span class="nazwa">Zmontowane odcinki</span><span class="leader"></span><span class="spec">odcinek.mp4 · 4K + 1080p</span></li>
+        <li><span class="nazwa">Rolki pionowe z napisami</span><span class="leader"></span><span class="spec">rolki_9x16 · 1080×1920</span></li>
+        <li><span class="nazwa">Wersja audio</span><span class="leader"></span><span class="spec">odcinek_audio.mp3</span></li>
+        <li><span class="nazwa">Transkrypcja i napisy</span><span class="leader"></span><span class="spec">transkrypcja.txt · napisy.srt</span></li>
+        <li><span class="nazwa">Opis, tytuł, rozdziały i tagi</span><span class="leader"></span><span class="spec">opis_i_tagi.txt</span></li>
+        <li><span class="nazwa">Miniatury do testu</span><span class="leader"></span><span class="spec">miniatura/</span></li>
+        <li><span class="nazwa">Zdjęcia ze zjazdu</span><span class="leader"></span><span class="spec">foto/</span></li>
+        <li class="total"><span class="nazwa">Wszystko w jednym katalogu</span><span class="leader"></span><span class="spec">gotowe do publikacji</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ══ 05 ZAKRES ══ -->
+<section id="s05" data-num="05">
+  <div class="pasmo pasmo-I canvas">
+    <span class="rzym" aria-hidden="true">I</span>
+    <div class="grid"><div class="pasmo-body">
+      <p class="mono cut"><span>05</span><span>Zakres współpracy</span><span>3 poziomy</span></p>
+      <h2 class="h-sec mask" style="margin-top:22px"><span>Jeden odcinek, seria</span></h2>
+      <h2 class="h-sec mask acc"><span>albo cały kanał.</span></h2>
+      <p class="lead cut" style="margin-top:26px">Nie ma jednego zestawu dla wszystkich. Jest pytanie, jak daleko chcesz to zaprowadzić - i od tego zależy, ile z tego robimy my.</p>
+      <div class="cut" style="margin-top:56px">
+        <h3 class="h-line">I &nbsp;·&nbsp; Pojedyncze odcinki</h3>
+        <p class="lead" style="margin-top:14px;max-width:56ch">Jeden temat, jedno nagranie, komplet materiału. Wchodzisz z gotowym pomysłem albo ustalamy go w trakcie jednej rozmowy. Dobre, kiedy chcesz sprawdzić, jak wyglądasz na ekranie i czy w ogóle chcesz to robić dalej.</p>
+        <div class="mikro">
+          <div><span class="chip chip--ty">Po Twojej stronie</span>
+            <ul><li><i class="star"></i>Temat i gość</li><li><i class="star"></i>Jeden dzień w studiu</li><li><i class="star"></i>Akceptacja materiału</li></ul></div>
+          <div><span class="chip chip--my">Po naszej stronie</span>
+            <ul><li><i class="star"></i>Ustawienie planu</li><li><i class="star"></i>Nagranie</li><li><i class="star"></i>Montaż</li><li><i class="star"></i>Rolki</li><li><i class="star"></i>Pliki gotowe do publikacji</li></ul></div>
+        </div>
+        <p class="mono" style="margin-top:30px"><span>Nagranie</span><span>Montaż</span><span>Rolki</span><span>Opisy</span><span>Miniatura</span></p>
+      </div>
+    </div></div>
+  </div>
+
+  <div class="pasmo pasmo-II">
+    <span class="rzym" aria-hidden="true">II</span>
+    <div class="grid"><div class="pasmo-body cut">
+      <h3 class="h-line">II &nbsp;·&nbsp; Serie</h3>
+      <p class="lead" style="margin-top:14px;max-width:62ch">Cykl z zaplanowanym formatem i stałym terminem w kalendarzu. Nagrywamy blokowo, więc jeden dzień daje materiał na kilka tygodni publikacji. Tu zaczyna się praca nad tym, żeby odcinki wyglądały jak jedna całość, a nie jak zbiór nagrań.</p>
+      <div class="mikro">
+        <div><span class="chip chip--ty">Po Twojej stronie</span>
+          <ul><li><i class="star"></i>Zjazd raz na ustalony okres</li><li><i class="star"></i>Akceptacja</li></ul></div>
+        <div><span class="chip chip--my">Po naszej stronie</span>
+          <ul><li><i class="star"></i>Format i oprawa serii</li><li><i class="star"></i>Propozycje tematów</li><li><i class="star"></i>Konspekty</li><li><i class="star"></i>Produkcja</li><li><i class="star"></i>Komplet krótkich form</li><li><i class="star"></i>Opisy</li><li><i class="star"></i>Harmonogram publikacji</li></ul></div>
+      </div>
+      <p class="mono" style="margin-top:30px"><span>Wszystko z poziomu I</span><span>Spójna oprawa</span><span>Kalendarz wydań</span><span>Zapowiedzi</span></p>
+    </div></div>
+  </div>
+
+  <div class="pasmo pasmo-III">
+    <span class="rzym" aria-hidden="true">III</span>
+    <div class="grid"><div class="pasmo-body cut">
+      <h3 class="h-line">III &nbsp;·&nbsp; Cały kanał</h3>
+      <p class="lead" style="margin-top:14px;max-width:62ch">Prowadzimy kanał jako całość. Ty jesteś przed kamerą, reszta jest naszą robotą - łącznie z tym, co dzieje się po publikacji.</p>
+      <div class="mikro">
+        <div><span class="chip chip--ty">Po Twojej stronie</span>
+          <ul><li><i class="star"></i>Wejście do studia</li><li><i class="star"></i>Decyzje kierunkowe</li></ul></div>
+        <div><span class="chip chip--my">Po naszej stronie</span>
+          <ul><li><i class="star"></i>Strategia kanału</li><li><i class="star"></i>Plan wydawniczy</li><li><i class="star"></i>Tematy i konspekty</li><li><i class="star"></i>Koordynacja gości</li><li><i class="star"></i>Zjazdy</li><li><i class="star"></i>Postprodukcja</li><li><i class="star"></i>Krótkie formy i publikacja na wszystkich platformach</li><li><i class="star"></i>Opisy, transkrypcje, miniatury</li><li><i class="star"></i>Podsumowanie oglądalności i rekomendacje na kolejny kwartał</li></ul></div>
+      </div>
+      <p class="mono" style="margin-top:30px"><span>Wszystko z poziomu II</span><span>Prowadzenie kanału</span><span>Dystrybucja</span><span>Podsumowania</span></p>
+      <p class="lead" style="margin-top:52px;max-width:58ch">Zakres ustalamy na rozmowie, bo zależy od tego, ile odcinków realnie chcesz wypuszczać i co już masz po swojej stronie.</p>
+      <a href="#s09" class="link-arrow" style="display:inline-block;margin-top:22px">Porozmawiajmy o zakresie →</a>
+    </div></div>
+  </div>
+</section>
+
+<!-- ══ 06 KTO TO ROBI ══ -->
+<section id="s06" class="light pad-norm" data-num="06">
+  <div class="grid">
+    <div class="c1-5" style="grid-column:1/3">
+      <div class="frame cut" style="aspect-ratio:4/5"><span class="tag">Portret 4:5</span></div>
+    </div>
+    <div class="c4-8">
+      <p class="mono cut"><span>06</span><span>Kto to robi</span></p>
+      <h2 class="h-sec mask" style="margin-top:22px"><span>Robimy to<br>najpierw u siebie</span></h2>
+      <p class="lead cut" style="margin-top:26px">Prowadzimy podcast GSA - Growth, Scale &amp; Automate. Znamy tę robotę od strony osoby, która musi wejść do studia z tematem, a potem patrzeć na statystyki.</p>
+      <div class="cut" style="margin-top:30px;display:grid;gap:20px">
+        <p class="body">Przez pierwsze miesiące własnego podcastu popełniliśmy praktycznie każdy błąd, który da się popełnić. Zły format, za długie odcinki, tematy wybierane w piątek na następny wtorek, montaż, który zjadał więcej czasu niż nagranie. Nic z tego nie jest teorią.</p>
+        <p class="body">Dlatego rozmawiamy z Tobą jak operator, a nie jak usługodawca. Usługodawca sprzedaje zakres prac. <strong>My wiemy, w którym momencie kanał się sypie i co trzeba wtedy zmienić</strong>, bo sami przez ten moment przeszliśmy.</p>
+        <p class="body">Oskar Szarek prowadzi GSA i realnie współbuduje marki, więc rozmowa o Twoim kanale nie kończy się na liście pytań do gościa. Jeśli chcesz, siada z Tobą jako gospodarz Twojego formatu.</p>
+        <p class="mono" style="margin-top:12px"><span>Oskar Szarek</span><span>Prowadzący</span><span>GSA - Growth, Scale &amp; Automate</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ 07 STUDIO ══ -->
+<section id="s07" class="dark pad-air" data-num="07" style="padding-top:0">
+  <div class="bleed">
+    <div class="frame shot-main cut">
+      <h2 class="h-sec mask"><span>Miejsce, w którym<br>nic Cię nie rozprasza</span></h2>
+      <span class="tag" style="left:auto;right:20px;bottom:20px">Kadr główny 21:9</span>
+    </div>
+  </div>
+  <div class="grid" style="margin-top:56px">
+    <div class="c1-8">
+      <p class="mono cut"><span>07</span><span>Studio</span><span>Warszawa</span></p>
+      <p class="lead cut" style="margin-top:20px">Wygłuszenie, stała aranżacja i światło ustawiane pod Twoją markę. Przyjeżdżasz na gotowe, a przy stałej współpracy aranżację można zmieniać między odcinkami.</p>
+    </div>
+    <div class="c10-12 dane cut">
+      <div><p class="mono"><span>Powierzchnia</span></p><p class="h-sub" style="margin-top:6px"><i class="slot">[X]</i> m²</p></div>
+      <div><p class="mono"><span>Wysokość</span></p><p class="h-sub" style="margin-top:6px"><i class="slot">[X]</i> m</p></div>
+      <div><p class="mono"><span>Osób na planie</span></p><p class="h-sub" style="margin-top:6px">do <i class="slot">[X]</i></p></div>
+      <div><p class="mono"><span>Dojście od metra</span></p><p class="h-sub" style="margin-top:6px"><i class="slot">[X]</i> min</p></div>
+    </div>
+    <div class="c1-12 aran cut">
+      <div class="frame"><span class="tag">Aranżacja 1</span></div>
+      <div class="frame"><span class="tag">Aranżacja 2</span></div>
+      <div class="frame"><span class="tag">Aranżacja 3</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ 08 PYTANIA ══ -->
+<section id="s08" class="light pad-norm" data-num="08">
+  <div class="grid">
+    <div class="c2-6">
+      <p class="mono cut"><span>08</span><span>Pytania</span><span>Przed pierwszą rozmową</span></p>
+      <h2 class="h-sec mask" style="margin-top:22px"><span>To, o co pytają<br>przed pierwszą rozmową</span></h2>
+      <p class="lead cut" style="margin-top:26px">Odpowiedzi krótkie i konkretne. Jeśli czegoś tu nie ma, napisz - dopiszemy.</p>
+    </div>
+    <div class="c1-12 qa cut" style="margin-top:64px">
+      <div><p class="qn">01</p><h3 class="h-line">Co mam ze sobą zabrać?</h3><p>Siebie i tematy. Sprzęt, mikrofony, światło i obsługa są po naszej stronie. Jeśli masz materiały do pokazania na ekranie, przyślij je dzień wcześniej.</p></div>
+      <div><p class="qn">02</p><h3 class="h-line">Co jeśli się pomylę albo zacznę od nowa?</h3><p>Nic się nie dzieje. Nagrywamy z zapasem, a montaż i tak wycina wszystko, co nie ma trafić do odcinka. Możesz powtarzać dowolny fragment.</p></div>
+      <div><p class="qn">03</p><h3 class="h-line">Czy mogę nagrać kilka odcinków jednego dnia?</h3><p>Tak i to rekomendujemy. Jeden dzień zdjęciowy daje materiał na cały miesiąc publikacji i jest wygodniejszy niż cztery osobne wizyty.</p></div>
+      <div><p class="qn">04</p><h3 class="h-line">Kiedy dostaję materiał?</h3><p>Terminy ustalamy przed nagraniem i wpisujemy do harmonogramu publikacji. Przy stałej współpracy są stałe, więc wiesz z góry, kiedy co wychodzi.</p></div>
+      <div><p class="qn">05</p><h3 class="h-line">Kto wymyśla tematy?</h3><p>Zależy od zakresu. Przy pojedynczych odcinkach Ty, przy serii i przy całym kanale przygotowujemy propozycje tematów i konspekty przed każdym nagraniem.</p></div>
+      <div><p class="qn">06</p><h3 class="h-line">Do kogo należą materiały?</h3><p>Do Ciebie. Wszystkie prawa przechodzą na Ciebie po rozliczeniu. Fragment w portfolio pokazujemy wyłącznie za Twoją zgodą.</p></div>
+      <div><p class="qn">07</p><h3 class="h-line">Nie mam pomysłu na format. To problem?</h3><p>Nie. Częściej go nie ma niż jest. Ustalenie formatu jest pierwszym etapem pracy, a nie warunkiem wejścia.</p></div>
+      <div><p class="qn">08</p><h3 class="h-line">W co się ubrać?</h3><p>Jednolite kolory, bez drobnej kratki i pasków, bo przy 4K falują na obrazie. Unikaj czystej bieli i logotypów, których nie chcesz oglądać przez cały odcinek.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ 09 ZGŁOSZENIE ══ -->
+<section id="s09" class="canvas glow-r pad-norm" data-num="09">
+  <div class="grid" style="row-gap:56px">
+    <div class="c1-6">
+      <p class="mono cut"><span>09</span><span>Zgłoszenie</span></p>
+      <h2 class="h-sec mask" style="margin-top:22px"><span>Najpierw przyjedź.</span></h2>
+      <h2 class="h-sec mask acc"><span>Potem zdecydujesz.</span></h2>
+      <p class="lead cut" style="margin-top:26px">Pokażemy studio, ustawimy Cię przed kamerą i nagramy próbne 5 minut. Napisz, co chcesz nagrywać i dla kogo - ustalamy format, a dopiero potem blokujemy termin w kalendarzu.</p>
+      <div class="brace cut" style="margin-top:52px;padding-block:24px;max-width:520px">
+        <div class="kontakt-blok">
+          <div class="kv"><span class="mono"><span>Adres</span></span><span class="slot">[ULICA I NUMER, WARSZAWA]</span></div>
+          <div class="kv"><span class="mono"><span>Telefon</span></span><span class="slot">[NUMER]</span></div>
+          <div class="kv"><span class="mono"><span>E-mail</span></span><span class="slot">[ADRES E-MAIL]</span></div>
+        </div>
+      </div>
+      <div class="socials cut">
+        <a href="#" aria-label="YouTube"><svg><use href="#yt"/></svg></a>
+        <a href="#" aria-label="Instagram"><svg><use href="#ig"/></svg></a>
+      </div>
+    </div>
+    <div class="c9-12 cut" style="grid-column:8/13">
+      <form class="sheet" id="zgloszenie" novalidate>
+        <div class="f-row">
+          <div class="field"><label for="f1">Imię i nazwisko</label><input id="f1" required></div>
+          <div class="field"><label for="f2">Firma albo marka</label><input id="f2"></div>
+        </div>
+        <div class="field"><label for="f3">Co chcesz nagrywać</label><textarea id="f3" placeholder="O czym ma być, do kogo mówisz"></textarea></div>
+        <div class="f-row">
+          <div class="field"><label for="f4">Jak często</label>
+            <select id="f4"><option>Jednorazowo</option><option>Raz w miesiącu</option><option>Kilka razy w miesiącu</option><option>Jeszcze nie wiem</option></select></div>
+          <div class="field"><label for="f5">Poziom zakresu</label>
+            <select id="f5"><option>Pojedyncze odcinki</option><option>Serie</option><option>Cały kanał</option><option>Jeszcze nie wiem</option></select></div>
+        </div>
+        <div class="field"><label for="f6">Telefon albo e-mail</label><input id="f6" required></div>
+        <button class="pill" type="submit" style="justify-self:start;margin-top:8px">Wyślij zgłoszenie</button>
+        <p class="marg" id="stan">Odpowiadamy na każde zgłoszenie, także wtedy, gdy uznamy, że to nie jest robota dla nas.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="pad-tight">
+  <div class="grid">
+    <div class="foot">
+      <div>
+        <a href="#s00" class="brand" style="margin-bottom:16px"><i class="star"></i>GSA STUDIO</a>
+        <p class="marg" style="max-width:34ch">Studio wideopodcastowe w Warszawie. Nagranie, montaż i publikacja w jednym miejscu.</p>
+      </div>
+      <div class="mono" style="flex-direction:column;align-items:flex-start;gap:12px">
+        <span>Warszawa</span><span class="slot">[ULICA I NUMER]</span>
+      </div>
+      <div class="mono" style="flex-direction:column;align-items:flex-start;gap:12px">
+        <span class="slot">[TELEFON]</span><span class="slot">[E-MAIL]</span>
+      </div>
+      <div class="mono" style="flex-direction:column;align-items:flex-start;gap:12px">
+        <a href="produkcja-podcastow-warszawa/">Produkcja</a><a href="rolki-shorty-talking-head/">Rolki i shorty</a><a href="nagrania-szkoleniowe-kursy-online/">Kursy online</a><a href="zakres-wspolpracy/">Zakres</a><a href="jak-pracujemy/">Jak pracujemy</a><a href="sprzet/">Sprzęt</a><a href="blog/">Blog</a><a href="kontakt/">Kontakt</a>
+      </div>
+    </div>
+    <div class="foot-bot mono">
+      <span>© 2026 GSA Studio</span>
+      <span style="display:flex;gap:22px"><a href="#">Polityka prywatności</a><a href="#">Regulamin</a></span>
+    </div>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"LocalBusiness","name":"GSA Studio",
+"description":"Studio wideopodcastowe w Warszawie. Nagranie, montaż, rolki, opisy i publikacja.",
+"areaServed":"Warszawa","address":{"@type":"PostalAddress","addressLocality":"Warszawa","addressCountry":"PL"}}
+</script>
+
+<script>
+// ciecie zamiast fade-up
+const io=new IntersectionObserver((es)=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.05,rootMargin:'0px 0px -8%'});
+document.querySelectorAll('.cut,.mask').forEach(el=>io.observe(el));
+
+// numer sekcji przy krawedzi + metryka w pasku
+const secs=[...document.querySelectorAll('section[data-num]')];
+const railNum=document.getElementById('railNum'),hdMeta=document.getElementById('hdMeta');
+const NAZWY={'00':'Otwarcie','01':'Materiał','02':'Rachunek godzin','03':'Przebieg','04':'Wykaz','05':'Zakres','06':'Kto to robi','07':'Studio','08':'Pytania','09':'Zgłoszenie'};
+let last='';
+addEventListener('scroll',()=>{
+  const y=innerHeight*.42;
+  let cur=secs[0];
+  for(const s of secs){const r=s.getBoundingClientRect();if(r.top<=y)cur=s}
+  const n=cur.dataset.num;
+  if(n!==last){last=n;railNum.textContent=n;
+    hdMeta.innerHTML=n==='00'?'<span>Warszawa</span><span>Produkcja wideopodcastów end-to-end</span>':'<span>'+n+'</span><span>'+NAZWY[n]+'</span>';}
+},{passive:true});
+
+// pas kadrow: przeciaganie mysza + postep
+const strip=document.getElementById('strip');
+let down=false,sx=0,sl=0;
+strip.addEventListener('pointerdown',e=>{down=true;sx=e.clientX;sl=strip.scrollLeft;strip.classList.add('drag');strip.setPointerCapture(e.pointerId)});
+strip.addEventListener('pointermove',e=>{if(down)strip.scrollLeft=sl-(e.clientX-sx)});
+strip.addEventListener('pointerup',()=>{down=false;strip.classList.remove('drag')});
+const bar=document.querySelector('.progress .track i'),cnt=document.querySelector('.progress .mono span');
+strip.addEventListener('scroll',()=>{
+  const max=strip.scrollWidth-strip.clientWidth;
+  const p=max>0?strip.scrollLeft/max:0;
+  bar.style.width=(18+p*82)+'%';
+  cnt.textContent=String(Math.min(5,Math.round(p*4)+1)).padStart(2,'0')+' / 05';
+},{passive:true});
+
+// formularz - prototyp
+document.getElementById('zgloszenie').addEventListener('submit',e=>{
+  e.preventDefault();
+  document.getElementById('stan').textContent='Przyjęte. Odezwiemy się z terminem rozmowy.';
+  document.getElementById('stan').style.color='var(--accent)';
+});
+</script>
+</body>
+</html>
