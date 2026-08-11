@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://example.pl/sitemap.xml
+Sitemap: https://kazekdaniel-lab.github.io/gsa-studio/sitemap.xml

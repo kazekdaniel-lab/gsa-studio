@@ -16,7 +16,7 @@ import os, re, sys, html, json, datetime
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 BLOG_DIR = os.path.join(ROOT, 'tresc', 'blog')
-DOMENA = 'https://example.pl'          # do podmiany na docelowa domene
+DOMENA = 'https://kazekdaniel-lab.github.io/gsa-studio'   # podglad; przy wdrozeniu podmien na domene docelowa
 MARKA = 'GSA Studio'
 DZIS = datetime.date.today().isoformat()
 
