@@ -1,6 +1,7 @@
 ---
 slug: gosc-zdalny-w-wideopodcascie
 tytul: Gość zdalny w wideopodcaście - jak nagrać go tak, żeby nie odstawał
+tytul_seo: Gość zdalny w wideopodcaście - jak to nagrać dobrze
 opis: Jak nagrać gościa zdalnego do wideopodcastu: lokalne nagranie po obu stronach, osobne ścieżki, synchronizacja po klapsie i ustawienie kadru w domu gościa.
 klaster: proces
 fraza: gość zdalny w wideopodcaście

@@ -1,6 +1,7 @@
 ---
 slug: gdzie-publikowac-wideopodcast
 tytul: Gdzie publikować wideopodcast - YouTube, Spotify, Apple i LinkedIn
+tytul_seo: Gdzie publikować wideopodcast: YouTube, Spotify, LinkedIn
 opis: Jak zachowuje się odbiorca na YouTube, Spotify, Apple Podcasts i LinkedIn. Co publikować gdzie, w jakiej kolejności i jak napisać opis pod każdą platformę.
 klaster: dystrybucja
 fraza: gdzie publikować wideopodcast

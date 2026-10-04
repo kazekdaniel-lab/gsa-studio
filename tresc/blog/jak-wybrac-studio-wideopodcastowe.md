@@ -1,6 +1,7 @@
 ---
 slug: jak-wybrac-studio-wideopodcastowe
 tytul: Jak wybrać studio wideopodcastowe - 12 pytań do zadania przed rezerwacją
+tytul_seo: Jak wybrać studio wideopodcastowe - 12 pytań
 opis: 12 pytań do studia wideopodcastowego przed rezerwacją terminu. Przy każdym opisujemy, jaka odpowiedź jest dobra, jaka słaba i co powinno Cię zaniepokoić.
 klaster: wybor
 fraza: jak wybrać studio wideopodcastowe

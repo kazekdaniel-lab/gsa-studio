@@ -1,4 +1,2 @@
 User-agent: *
-Allow: /
-
-Sitemap: https://kazekdaniel-lab.github.io/gsa-studio/sitemap.xml
+Disallow: /

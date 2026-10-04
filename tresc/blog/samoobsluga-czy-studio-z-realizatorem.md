@@ -1,6 +1,7 @@
 ---
 slug: samoobsluga-czy-studio-z-realizatorem
 tytul: Samoobsługa czy studio z realizatorem - co realnie kosztuje więcej
+tytul_seo: Samoobsługa czy studio z realizatorem - co drożej
 opis: Niższa stawka za godzinę w studiu samoobsługowym nie oznacza niższego kosztu odcinka. Sprawdź, co robi realizator i ile czasu zjada nagranie bez niego.
 klaster: wybor
 fraza: studio podcastowe samoobsługowe czy z realizatorem

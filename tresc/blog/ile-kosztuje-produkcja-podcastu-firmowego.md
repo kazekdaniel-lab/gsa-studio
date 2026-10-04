@@ -1,6 +1,7 @@
 ---
 slug: ile-kosztuje-produkcja-podcastu-firmowego
 tytul: Ile kosztuje produkcja podcastu firmowego - 6 składników rozliczanych osobno
+tytul_seo: Ile kosztuje produkcja podcastu firmowego
 opis: Produkcja podcastu firmowego rozbita na 6 składników: koordynacja gości, transkrypcje, krótkie formy, dystrybucja, opisy i raportowanie. Zobacz, co porównać.
 klaster: koszty
 fraza: ile kosztuje produkcja podcastu firmowego

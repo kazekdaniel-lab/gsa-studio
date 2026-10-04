@@ -1,5 +1,7 @@
 # Baza FAQ - 35 pytań
 
+> Dokument z sierpnia 2026. Gdzie rozjeżdża się z [DECYZJE-2026-09.md](DECYZJE-2026-09.md), obowiązuje tamten.
+
 Przeznaczenie: strona `/faq/` z oznaczeniem `FAQPage`, plus wybrane pytania jako sekcje FAQ na landingach i w artykułach.
 
 **Zasada odpowiedzi:** 40-60 słów, konkret w pierwszym zdaniu, liczby zamiast przymiotników. To jest format, który wchodzi do featured snippet i który cytują asystenci AI.

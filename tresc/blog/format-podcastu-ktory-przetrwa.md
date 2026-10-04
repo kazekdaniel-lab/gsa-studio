@@ -1,6 +1,7 @@
 ---
 slug: format-podcastu-ktory-przetrwa
 tytul: Jak wymyślić format podcastu, który przetrwa więcej niż 5 odcinków
+tytul_seo: Format podcastu, który przetrwa więcej niż 5 odcinków
 opis: Podcasty firmowe umierają na 5 odcinku z 4 powodów: brak tematów, za szeroka obietnica, zależność od gości i brak rytmu. Jak zbudować format odporny na każdy z nich.
 klaster: strategia
 fraza: format podcastu firmowego

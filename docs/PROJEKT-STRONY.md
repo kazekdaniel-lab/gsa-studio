@@ -1,5 +1,7 @@
 # Projekt strony studia - specyfikacja wykonawcza
 
+> Dokument z sierpnia 2026. Gdzie rozjeżdża się z [DECYZJE-2026-09.md](DECYZJE-2026-09.md), obowiązuje tamten.
+
 Model: pełna produkcja end-to-end. Podstawa: [research rynku](RESEARCH-RYNEK-I-DESIGN.md) i [koncepcja end-to-end](KONCEPCJA-STRONY-END-TO-END.md).
 
 Wszystko w nawiasach kwadratowych `[TAK]` to placeholder do uzupełnienia przez Was. Copy poniżej to gotowy draft, nie opis "co tu wstawić".

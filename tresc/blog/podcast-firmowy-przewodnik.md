@@ -26,7 +26,7 @@ Sprawdza się prosty test. Wypisz 5 pytań, które słyszysz od klientów za ka�
 
 Drugi warunek jest twardszy: ktoś w firmie musi chcieć mówić. Podcast bez człowieka z opinią zamienia się w czytanie materiałów marketingowych na głos i słychać to od pierwszej minuty.
 
-Trzeci warunek to horyzont czasowy. Pierwszy odcinek nie zrobi nic. Dziesiąty zaczyna być użyteczny w rozmowach handlowych, bo masz czym odpowiedzieć na konkretne wątpliwości. Szerzej rozpisujemy to w tekście [po co firmie podcast](/blog/po-co-firmie-podcast).
+Trzeci warunek to horyzont czasowy. Pierwszy odcinek nie zrobi nic. Dziesiąty zaczyna być użyteczny w rozmowach handlowych, bo masz czym odpowiedzieć na konkretne wątpliwości. Szerzej rozpisujemy to w tekście [po co firmie podcast](/blog/po-co-firmie-podcast/).
 
 | Sytuacja w firmie | Podcast pomoże | Podcast nie pomoże |
 |---|---|---|
@@ -45,7 +45,7 @@ Wybór celu przekłada się na wszystko dalej: kogo zapraszasz, jak długi jest 
 
 Sprzedaż i skracanie procesu. Zapraszasz klientów i ludzi z ich świata, rozmawiasz o problemach, które rozwiązujesz. Odcinek staje się materiałem wysyłanym przed spotkaniem albo po nim. Wynik mierzysz tym, ilu rozmówców handlowych obejrzało coś wcześniej.
 
-Rekrutacja i wizerunek pracodawcy. Rozmawiasz z własnym zespołem o tym, jak wygląda praca, jakie decyzje podejmujecie i na czym się przejechaliście. Kandydat wchodzi na rozmowę z obrazem firmy, a nie z ogłoszeniem. Rozwijamy ten wątek w tekście o [podcaście w employer brandingu](/blog/podcast-employer-branding).
+Rekrutacja i wizerunek pracodawcy. Rozmawiasz z własnym zespołem o tym, jak wygląda praca, jakie decyzje podejmujecie i na czym się przejechaliście. Kandydat wchodzi na rozmowę z obrazem firmy, a nie z ogłoszeniem. Rozwijamy ten wątek w tekście o [podcaście w employer brandingu](/blog/podcast-employer-branding/).
 
 Pozycja w branży. Zapraszasz ludzi, których Twój rynek zna, i prowadzisz rozmowę na poziomie, na który nie stać ogłoszeń. Efekt widać w zaproszeniach na konferencje, w odzewie od partnerów i w tym, kto odbiera Twój telefon.
 
@@ -71,7 +71,7 @@ Czego szukać u prowadzącego:
 
 Czego nie szukać: gładkiego głosu, doświadczenia radiowego i braku akcentu. Widz wyczuwa człowieka, który wie, o czym mówi, i wybacza mu potknięcia. Nie wybacza pustki.
 
-Osobna sprawa to 2 prowadzących. Para działa dobrze wtedy, gdy jedna osoba pilnuje tematu, a druga pyta z pozycji laika. Działa źle wtedy, gdy obaj chcą mówić i skaczą sobie w zdanie. Więcej o doborze osoby zebraliśmy w tekście [kto powinien prowadzić podcast firmowy](/blog/kto-powinien-prowadzic-podcast-firmowy).
+Osobna sprawa to 2 prowadzących. Para działa dobrze wtedy, gdy jedna osoba pilnuje tematu, a druga pyta z pozycji laika. Działa źle wtedy, gdy obaj chcą mówić i skaczą sobie w zdanie. Więcej o doborze osoby zebraliśmy w tekście [kto powinien prowadzić podcast firmowy](/blog/kto-powinien-prowadzic-podcast-firmowy/).
 
 ## Jak wybrać format, który wytrzyma 20 odcinków?
 
@@ -91,7 +91,7 @@ Długość ustawiaj od dołu. Odcinek 25-minutowy, który wychodzi co 2 tygodnie
 
 Częstotliwość ustal raz i trzymaj się jej. Co 2 tygodnie jest bezpieczniejsze niż co tydzień, bo zostaje zapas na urlopy i odwołane terminy. Widz przyzwyczaja się do rytmu szybciej, niż się wydaje, i zauważa przerwę.
 
-Zanim nagrasz pierwszy odcinek, rozstrzygnij jeszcze jedno: robisz zamkniętą serię czy ciągły cykl. Zamknięta seria 8 odcinków ma początek i koniec, więc łatwiej ją domknąć bez poczucia porzucenia. Porównanie obu dróg jest w tekście o [serii i pojedynczych odcinkach](/blog/seria-czy-pojedyncze-odcinki), a szersze podejście do trwałości formatu w tekście o [formacie, który przetrwa](/blog/format-podcastu-ktory-przetrwa).
+Zanim nagrasz pierwszy odcinek, rozstrzygnij jeszcze jedno: robisz zamkniętą serię czy ciągły cykl. Zamknięta seria 8 odcinków ma początek i koniec, więc łatwiej ją domknąć bez poczucia porzucenia. Porównanie obu dróg jest w tekście o [serii i pojedynczych odcinkach](/blog/seria-czy-pojedyncze-odcinki/), a szersze podejście do trwałości formatu w tekście o [formacie, który przetrwa](/blog/format-podcastu-ktory-przetrwa/).
 
 ## Skąd brać tematy i gości?
 
@@ -108,9 +108,9 @@ Gości szukaj w tej kolejności:
 3. Partnerzy i dostawcy, którzy patrzą na ten sam rynek z drugiej strony.
 4. Rozpoznawalne nazwiska z branży, dopiero gdy masz co pokazać jako próbkę.
 
-Przed nagraniem gość powinien wiedzieć, o czym będzie rozmowa, ile potrwa i czy ma przygotować liczby albo przykłady. Nie wysyłaj mu pełnej listy pytań co do słowa, bo dostaniesz odczytane odpowiedzi. Wystarczą 3 obszary. Więcej w tekście o [przygotowaniu gościa do podcastu](/blog/jak-przygotowac-goscia-do-podcastu).
+Przed nagraniem gość powinien wiedzieć, o czym będzie rozmowa, ile potrwa i czy ma przygotować liczby albo przykłady. Nie wysyłaj mu pełnej listy pytań co do słowa, bo dostaniesz odczytane odpowiedzi. Wystarczą 3 obszary. Więcej w tekście o [przygotowaniu gościa do podcastu](/blog/jak-przygotowac-goscia-do-podcastu/).
 
-Jeśli gość nie może dojechać, zostaje nagranie zdalne. Da się je zrobić dobrze, ale wymaga zapisu lokalnego po obu stronach i testu ustawienia u niego w domu, co opisujemy w tekście o [gościu zdalnym](/blog/gosc-zdalny-w-wideopodcascie).
+Jeśli gość nie może dojechać, zostaje nagranie zdalne. Da się je zrobić dobrze, ale wymaga zapisu lokalnego po obu stronach i testu ustawienia u niego w domu, co opisujemy w tekście o [gościu zdalnym](/blog/gosc-zdalny-w-wideopodcascie/).
 
 ## Jak wygląda produkcja jednego odcinka i ile zajmuje czasu?
 
@@ -124,7 +124,7 @@ Dzień nagrania wygląda tak samo za każdym razem:
 4. Dogrywki: wejście, zapowiedź, pożegnanie, ewentualne powtórzenie fragmentu, który nie wyszedł.
 5. Zdjęcia kadrowe do miniatury i postów, póki wszyscy są jeszcze ucharakteryzowani i w tym samym ubraniu.
 
-Po nagraniu materiał idzie do montażu i wraca do Ciebie jako podgląd w połowie drogi. Cały przebieg dzień po dniu rozpisaliśmy w tekście [od nagrania do publikacji](/blog/od-nagrania-do-publikacji), a sam czas pracy montażysty w tekście o [czasie montażu](/blog/ile-trwa-montaz-podcastu).
+Po nagraniu materiał idzie do montażu i wraca do Ciebie jako podgląd w połowie drogi. Cały przebieg dzień po dniu rozpisaliśmy w tekście [od nagrania do publikacji](/blog/od-nagrania-do-publikacji/), a sam czas pracy montażysty w tekście o [czasie montażu](/blog/ile-trwa-montaz-podcastu/).
 
 | Etap | Kto pracuje | Ile trwa | Twój udział |
 |---|---|---|---|
@@ -135,9 +135,9 @@ Po nagraniu materiał idzie do montażu i wraca do Ciebie jako podgląd w połow
 | Rolki, opisy, napisy | studio | po zamknięciu wersji długiej | żaden |
 | Publikacja | Ty albo studio | zależy od ustaleń | do ustalenia |
 
-Największą oszczędność czasu daje nagrywanie blokowe: 3 albo 4 odcinki jednego dnia, z tym samym ustawieniem światła i tą samą koszulą prowadzącego. Jeden dzień zdjęciowy zamiast 4 dojazdów. Jak to poukładać, opisujemy w tekście o [nagrywaniu blokowym](/blog/batch-recording-nagrywanie-blokowe), a pełny rachunek czasu po stronie firmy w tekście o [czasie, jaki zajmuje podcast firmowy](/blog/ile-czasu-zajmuje-podcast-firmowy).
+Największą oszczędność czasu daje nagrywanie blokowe: 3 albo 4 odcinki jednego dnia, z tym samym ustawieniem światła i tą samą koszulą prowadzącego. Jeden dzień zdjęciowy zamiast 4 dojazdów. Jak to poukładać, opisujemy w tekście o [nagrywaniu blokowym](/blog/batch-recording-nagrywanie-blokowe/), a pełny rachunek czasu po stronie firmy w tekście o [czasie, jaki zajmuje podcast firmowy](/blog/ile-czasu-zajmuje-podcast-firmowy/).
 
-Wybór miejsca też wpływa na tempo. Nagranie w studiu oznacza gotowe światło i akustykę, nagranie w biurze oznacza za każdym razem stawianie wszystkiego od nowa i walkę z klimatyzacją. Zestawienie obu wariantów jest w tekście [studio czy biuro](/blog/studio-czy-biuro-podcast).
+Wybór miejsca też wpływa na tempo. Nagranie w studiu oznacza gotowe światło i akustykę, nagranie w biurze oznacza za każdym razem stawianie wszystkiego od nowa i walkę z klimatyzacją. Zestawienie obu wariantów jest w tekście [studio czy biuro](/blog/studio-czy-biuro-podcast/).
 
 ## Gdzie publikować odcinek i co z niego wycinać?
 
@@ -153,11 +153,11 @@ Z jednego nagrania powstaje kilka rzeczy i każda pracuje gdzie indziej:
 | Fragment 2-3 minuty | LinkedIn, mail do klientów | konkretna odpowiedź na konkretne pytanie |
 | Transkrypcja i opis | strona firmowa | tekst do wyszukiwania |
 
-Rolki są najczęściej niedoceniane. To one przynoszą ludzi, którzy nie znali firmy, a długi odcinek przekonuje tych, którzy już weszli. Jak dobierać fragmenty, żeby działały, opisujemy w tekście o [shortach z podcastu](/blog/shorty-z-podcastu-zasieg), a pełną mapę miejsc publikacji w tekście [gdzie publikować wideopodcast](/blog/gdzie-publikowac-wideopodcast).
+Rolki są najczęściej niedoceniane. To one przynoszą ludzi, którzy nie znali firmy, a długi odcinek przekonuje tych, którzy już weszli. Jak dobierać fragmenty, żeby działały, opisujemy w tekście o [shortach z podcastu](/blog/shorty-z-podcastu-zasieg/), a pełną mapę miejsc publikacji w tekście [gdzie publikować wideopodcast](/blog/gdzie-publikowac-wideopodcast/).
 
 Wybierając fragmenty na rolki, szukaj miejsc, gdzie ktoś mówi coś kontrowersyjnego, podaje konkretną liczbę albo opowiada, jak coś poszło źle. Fragmenty z definicjami i wstępami nie działają, choć w odcinku brzmią sensownie.
 
-Odcinek nie kończy życia w dniu publikacji. Dobre nagranie wraca w mailach do klientów, w odpowiedziach na pytania i w materiałach dla nowych pracowników jeszcze wiele miesięcy później. Rozwijamy to w tekście o tym, [co dzieje się z odcinkiem po publikacji](/blog/co-sie-dzieje-z-odcinkiem-po-publikacji).
+Odcinek nie kończy życia w dniu publikacji. Dobre nagranie wraca w mailach do klientów, w odpowiedziach na pytania i w materiałach dla nowych pracowników jeszcze wiele miesięcy później. Rozwijamy to w tekście o tym, [co dzieje się z odcinkiem po publikacji](/blog/co-sie-dzieje-z-odcinkiem-po-publikacji/).
 
 ## Po czym poznasz, że podcast działa?
 
@@ -179,7 +179,7 @@ Ustaw pomiar zanim opublikujesz pierwszy odcinek, bo część rzeczy da się pol
 | Wzmianki w rozmowach | realny wpływ na decyzje | skalę zjawiska |
 | Zapytania z formularza po odcinku | bezpośredni efekt | wpływ pośredni, rozłożony w czasie |
 
-Bądź uczciwy w oczekiwaniach czasowych. Przez pierwsze kilka miesięcy głównym wynikiem jest to, że materiał w ogóle powstaje w stałym rytmie i że prowadzący czuje się przed kamerą swobodnie. Zestaw wskaźników, które faktycznie warto sprawdzać, rozpisaliśmy w tekście [jak mierzyć, czy podcast działa](/blog/jak-mierzyc-czy-podcast-dziala).
+Bądź uczciwy w oczekiwaniach czasowych. Przez pierwsze kilka miesięcy głównym wynikiem jest to, że materiał w ogóle powstaje w stałym rytmie i że prowadzący czuje się przed kamerą swobodnie. Zestaw wskaźników, które faktycznie warto sprawdzać, rozpisaliśmy w tekście [jak mierzyć, czy podcast działa](/blog/jak-mierzyc-czy-podcast-dziala/).
 
 Jeśli po 10 odcinkach nic się nie dzieje, sprawdzaj w tej kolejności: temat, tytuł i miniatura, pierwsze 30 sekund, dopiero potem jakość obrazu. Prawie nigdy nie chodzi o obraz.
 
@@ -187,10 +187,10 @@ Jeśli po 10 odcinkach nic się nie dzieje, sprawdzaj w tej kolejności: temat, 
 
 Zaczynamy od rozmowy o celu i formacie, zanim ustawimy jakąkolwiek kamerę. Wychodzimy z niej z jedną kartką: kto prowadzi, jak długi jest odcinek, co ile ukazuje się nowy i jakie 8 tematów wchodzi na start.
 
-Nagrywamy w stałej scenografii, więc kolejne odcinki wyglądają tak samo i nie trzeba za każdym razem ustawiać wszystkiego od zera. Prowadzący dostaje ten sam kadr, to samo światło i ten sam mikrofon w każdym odcinku, co przy serii ma większe znaczenie niż pojedynczy efektowny kadr. Jak dobieramy liczbę kamer i ustawienie planu, opisujemy w tekstach o [liczbie kamer](/blog/ile-kamer-do-podcastu) i [scenografii podcastu](/blog/scenografia-podcastu).
+Nagrywamy w stałej scenografii, więc kolejne odcinki wyglądają tak samo i nie trzeba za każdym razem ustawiać wszystkiego od zera. Prowadzący dostaje ten sam kadr, to samo światło i ten sam mikrofon w każdym odcinku, co przy serii ma większe znaczenie niż pojedynczy efektowny kadr. Jak dobieramy liczbę kamer i ustawienie planu, opisujemy w tekstach o [liczbie kamer](/blog/ile-kamer-do-podcastu/) i [scenografii podcastu](/blog/scenografia-podcastu/).
 
-Pierwsze nagranie prowadzimy wolniej niż kolejne. Przed startem robimy próbę na 10 minut, którą kasujemy, żeby prowadzący usłyszał siebie i zobaczył kadr, zanim wejdzie gość. Co przygotować przed tym dniem, spisaliśmy w tekście o [przygotowaniu do pierwszego nagrania](/blog/jak-przygotowac-sie-do-pierwszego-nagrania).
+Pierwsze nagranie prowadzimy wolniej niż kolejne. Przed startem robimy próbę na 10 minut, którą kasujemy, żeby prowadzący usłyszał siebie i zobaczył kadr, zanim wejdzie gość. Co przygotować przed tym dniem, spisaliśmy w tekście o [przygotowaniu do pierwszego nagrania](/blog/jak-przygotowac-sie-do-pierwszego-nagrania/).
 
 Sami prowadzimy własny podcast, więc znamy tę drogę z obu stron: terminy, które się przesuwają, gościa, który odwołuje dzień wcześniej, i odcinek nagrany na siłę, którego potem nikt nie chce oglądać. Dlatego przy planowaniu serii pilnujemy zapasu w harmonogramie i sensownej kolejności odcinków.
 
-Jeśli zastanawiasz się, jak porównywać oferty studiów i skąd biorą się między nimi różnice, zebraliśmy to w tekstach [jak wybrać studio wideopodcastowe](/blog/jak-wybrac-studio-wideopodcastowe) i [dlaczego oferty na podcast się różnią](/blog/dlaczego-oferty-na-podcast-sie-roznia). Zakres samej produkcji rozpisaliśmy w tekście [co wchodzi w produkcję podcastu](/blog/co-wchodzi-w-produkcje-podcastu), a wybór między wideo a samym dźwiękiem w tekście [wideopodcast czy podcast audio](/blog/wideopodcast-czy-podcast-audio).
+Jeśli zastanawiasz się, jak porównywać oferty studiów i skąd biorą się między nimi różnice, zebraliśmy to w tekstach [jak wybrać studio wideopodcastowe](/blog/jak-wybrac-studio-wideopodcastowe/) i [dlaczego oferty na podcast się różnią](/blog/dlaczego-oferty-na-podcast-sie-roznia/). Zakres samej produkcji rozpisaliśmy w tekście [co wchodzi w produkcję podcastu](/blog/co-wchodzi-w-produkcje-podcastu/), a wybór między wideo a samym dźwiękiem w tekście [wideopodcast czy podcast audio](/blog/wideopodcast-czy-podcast-audio/).

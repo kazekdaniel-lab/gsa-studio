@@ -1,5 +1,7 @@
 # Plan SEO, AEO i GEO - studio wideopodcastowe Warszawa
 
+> Dokument z sierpnia 2026. Gdzie rozjeżdża się z [DECYZJE-2026-09.md](DECYZJE-2026-09.md), obowiązuje tamten.
+
 Dokumenty powiązane: [sitemap i treści](SITEMAP-I-TRESCI.md), [30 artykułów](30-ARTYKULOW.md), [baza FAQ](FAQ-BAZA.md).
 
 ---

@@ -1,6 +1,7 @@
 ---
 slug: ile-kamer-do-podcastu
 tytul: Ile kamer potrzebuje Twój podcast - kadry przy 1, 2, 3 i 4 osobach
+tytul_seo: Ile kamer do podcastu - kadry przy 1, 2, 3 i 4 osobach
 opis: Ile kamer potrzebuje wideopodcast przy 1, 2, 3 i 4 osobach. Konkretne kadry, reguła 180 stopni, nagrywanie ISO i spójność kolorystyczna między kamerami.
 klaster: wybor
 fraza: ile kamer do podcastu

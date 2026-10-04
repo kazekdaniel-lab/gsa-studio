@@ -5,15 +5,17 @@
 Zakres usług: wideopodcasty, krótkie formy pionowe (rolki, shorty, talking head), nagrania szkoleniowe i kursy online.
 Nie realizujemy: webinarów i transmisji na żywo, sesji zdjęciowych.
 
-Model pracy: jeden dzień zdjęciowy daje materiał na kilka tygodni publikacji. Nagrywanie blokowe, rejestracja ISO (osobna ścieżka na każdą kamerę i mikrofon).
-Poziomy współpracy: pojedyncze odcinki, serie, prowadzenie produkcji całego kanału. Zakres ustalany na rozmowie.
-Podział odpowiedzialności: merytoryka, tematy i dobór gości zostają po stronie klienta na każdym poziomie. Studio odpowiada za plan, sprzęt, realizację, montaż, krótkie formy, miniatury, transkrypcje i publikację techniczną. Nie prowadzimy strategii treści ani nie piszemy konspektów merytorycznych.
+Model pracy: jeden dzień zdjęciowy daje materiał na cały miesiąc. Nagrywanie blokowe, rejestracja ISO (osobna ścieżka na każdą kamerę i mikrofon).
+Poziomy współpracy: trzy. Poziom I - pojedyncze odcinki. Poziom II - seria ze stałym terminem zjazdów i spójną oprawą. Poziom III - prowadzenie całego kanału razem z publikacją, archiwum i raportem wydań. Pełne porównanie zakresu: https://kazekdaniel-lab.github.io/gsa-studio/prowadzenie-kanalu/
+Podział odpowiedzialności: tematy, dobór gości i merytoryka zostają po stronie klienta na każdym poziomie. Pomagamy ułożyć z tej wiedzy format, kolejność odcinków i plan zjazdów, ale nie tworzymy merytoryki za klienta. Studio odpowiada za plan, sprzęt, realizację, montaż, krótkie formy pionowe, miniatury, transkrypcje i publikację techniczną.
+Czego nie robimy: nie wymyślamy tematów za klienta, nie występujemy przed kamerą zamiast niego i nie obiecujemy zasięgu.
+Ceny: nie publikujemy cennika. Wycena powstaje po rozmowie i zależy od poziomu oraz liczby odcinków w miesiącu.
 
 ## Podstrony
 - [Produkcja podcastów](https://kazekdaniel-lab.github.io/gsa-studio/produkcja-podcastow-warszawa/)
 - [Rolki, shorty, talking head](https://kazekdaniel-lab.github.io/gsa-studio/rolki-shorty-talking-head/)
 - [Nagrania szkoleniowe i kursy online](https://kazekdaniel-lab.github.io/gsa-studio/nagrania-szkoleniowe-kursy-online/)
-- [Zakres współpracy](https://kazekdaniel-lab.github.io/gsa-studio/zakres-wspolpracy/)
+- [Prowadzenie kanału, trzy poziomy](https://kazekdaniel-lab.github.io/gsa-studio/prowadzenie-kanalu/)
 - [Jak pracujemy](https://kazekdaniel-lab.github.io/gsa-studio/jak-pracujemy/)
 - [Sprzęt](https://kazekdaniel-lab.github.io/gsa-studio/sprzet/)
 - [O nas](https://kazekdaniel-lab.github.io/gsa-studio/o-nas/)

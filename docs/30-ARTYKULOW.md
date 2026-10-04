@@ -1,5 +1,7 @@
 # 30 artykułów na start
 
+> Dokument z sierpnia 2026. Gdzie rozjeżdża się z [DECYZJE-2026-09.md](DECYZJE-2026-09.md), obowiązuje tamten.
+
 Dokumenty powiązane: [sitemap i treści](SITEMAP-I-TRESCI.md), [plan SEO/AEO/GEO](PLAN-SEO-AEO-GEO.md), [baza FAQ](FAQ-BAZA.md).
 
 Wolumeny podane wyłącznie tam, gdzie mam je z eksportu Senuto. Reszta wymaga dociągnięcia - eksport był zbudowany wokół seeda „studio nagrań", więc brakuje w nim całej gałęzi videocastowej.

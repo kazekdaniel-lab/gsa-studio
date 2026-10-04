@@ -1,5 +1,7 @@
 # Architektura treści i sitemap
 
+> Dokument z sierpnia 2026. Gdzie rozjeżdża się z [DECYZJE-2026-09.md](DECYZJE-2026-09.md), obowiązuje tamten.
+
 Studio wideopodcastowe, Warszawa. Model: pełna produkcja end-to-end.
 Filary usługowe: wideopodcast, rolki/shorty/talking head, nagrania szkoleniowe i kursy online.
 Poza zakresem: webinary i transmisje live, sesje foto, nagrania muzyczne i sale prób.

@@ -1,5 +1,7 @@
 # Studio podcastowe Warszawa - research rynku i założenia projektu strony
 
+> Dokument z sierpnia 2026. Gdzie rozjeżdża się z [DECYZJE-2026-09.md](DECYZJE-2026-09.md), obowiązuje tamten.
+
 Data researchu: 2 sierpnia 2026. Wszystkie ceny netto, o ile źródło nie mówi inaczej.
 Zakres: 9 studiów warszawskich zbadanych bezpośrednio ze stron, 2 benchmarki premium z Londynu, standardy produkcyjne multicam.
 

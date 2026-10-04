@@ -1,5 +1,7 @@
 # Studio podcastowe - koncepcja strony pod pełną produkcję end-to-end
 
+> Dokument z sierpnia 2026. Gdzie rozjeżdża się z [DECYZJE-2026-09.md](DECYZJE-2026-09.md), obowiązuje tamten.
+
 Dokument nadrzędny wobec [RESEARCH-RYNEK-I-DESIGN.md](RESEARCH-RYNEK-I-DESIGN.md), który opisuje cały rynek łącznie z wynajmem. Tutaj wszystko jest podporządkowane jednemu modelowi: sprzedajemy gotowy odcinek i serię, nie godziny w studiu.
 
 Data: 2 sierpnia 2026. Ceny netto.
